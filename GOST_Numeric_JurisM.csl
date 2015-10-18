@@ -4,7 +4,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	<info>
 		<title>Russian GOST R 7.0.5-2008 (numeric) En+Ru</title>
 		<id>http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru</id>
-		<link href="https://raw.githubusercontent.com/i3v/GOST-Numeric-style-for-JurisM/master/GOST_Numeric_JurisM.csl" rel="self"/>
+		<link href="https://raw.githubusercontent.com/i3v/JurisM_RuStyles/master/GOST_Numeric_JurisM.csl" rel="self"/>
 		<link href="http://protect.gost.ru/document.aspx?control=7&amp;id=173511" rel="documentation"/>
 		<!-- <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru" rel="self"/> -->
 		<author>
