@@ -16,10 +16,10 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<name> Nazarenko Maxim</name>
 			<email>NazarenkoMV@gmail.com</email>
 		</contributor>
-		<category field="generic-base"/>
+		
 		<category citation-format="numeric"/>
-		<!-- <published>2010-03-22T10:40:00+06:00</published> -->
-		<updated>2011-07-26T11:12:43-07:00</updated>
+		<category field="generic-base"/>
+		
 		
 		<summary>
 			This style was modified by Maxim Nazarenko to work with both English and Russian source in Multilangual Zotero.
@@ -43,8 +43,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 
 			И последнее, патенты по умолчанию представлены как USA, поскольку в CSL 1.0 нет переменной, соответствующей 
 			полю country в базе Zotero 2.1. Надеюсь, это будет исправлено в будущих версиях.</summary>
-		<rights>This work is licensed under a Creative Commons Attribution-Share Alike 3.0 Unported License 
-			http://creativecommons.org/licenses/by-sa/3.0/</rights>
+			
+		<!-- <published>2010-03-22T10:40:00+06:00</published> -->
+		<updated>2011-07-26T11:12:43-07:00</updated>
+			
+			
+		<rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
 	</info>
 	<!-- Local terms -->
 	<locale>
