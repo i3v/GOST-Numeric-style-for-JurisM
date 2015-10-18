@@ -13,8 +13,13 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<uri>http://sites.google.com/site/yurkin/</uri>
 		</author>
 		<contributor>
-			<name> Nazarenko Maxim</name>
+			<name>Nazarenko Maxim</name>
 			<email>NazarenkoMV@gmail.com</email>
+		</contributor>
+		
+		<contributor>	
+			<name>i3v</name>
+			<email>i3v@mail.ru</email>
 		</contributor>
 		
 		<category citation-format="numeric"/>
@@ -22,6 +27,14 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 		
 		
 		<summary>
+		  <!-- <updated>2015-10-18T19:26:00-07:00</updated>  -->
+		  This style was updated, to work with today's Juris-M 4.0.999.SOURCE.820ea77.
+		  Conforms with:  http://citationstylist.org/docs/citeproc-js-csl.html
+		  
+		  
+		  
+		  
+		  <!-- <updated>2015-10-18T19:26:00-07:00</updated> -->
 			This style was modified by Maxim Nazarenko to work with both English and Russian source in Multilangual Zotero.
 			Original description by Maxim Yurkin follows.
 
@@ -45,7 +58,8 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			полю country в базе Zotero 2.1. Надеюсь, это будет исправлено в будущих версиях.</summary>
 			
 		<!-- <published>2010-03-22T10:40:00+06:00</published> -->
-		<updated>2011-07-26T11:12:43-07:00</updated>
+		<!-- <updated>2011-07-26T11:12:43-07:00</updated> -->
+		<updated>2015-10-18T19:26:00-07:00</updated>
 			
 			
 		<rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
