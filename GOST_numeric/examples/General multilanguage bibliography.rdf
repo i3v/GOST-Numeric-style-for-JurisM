@@ -1,0 +1,93 @@
+<rdf:RDF
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns:z="http://www.zotero.org/namespaces/export#"
+ xmlns:dc="http://purl.org/dc/elements/1.1/"
+ xmlns:vcard="http://nwalsh.com/rdf/vCard#"
+ xmlns:foaf="http://xmlns.com/foaf/0.1/"
+ xmlns:bib="http://purl.org/net/biblio#"
+ xmlns:link="http://purl.org/rss/1.0/modules/link/"
+ xmlns:prism="http://prismstandard.org/namespaces/1.2/basic/"
+ xmlns:dcterms="http://purl.org/dc/terms/">
+    <bib:Book rdf:about="#item_38">
+        <z:itemType>book</z:itemType>
+        <dc:publisher>
+            <foaf:Organization>
+                <vcard:adr>
+                    <vcard:Address>
+                       <vcard:locality>New York: Plenum</vcard:locality>
+                    </vcard:Address>
+                </vcard:adr>
+            </foaf:Organization>
+        </dc:publisher>
+        <bib:editors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Cummins</foaf:surname>
+                        <foaf:givenname>H. Z.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:editors>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Pike</foaf:surname>
+                        <foaf:givenname>E. R.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_39"/>
+        <prism:volume>3</prism:volume>
+        <dc:date>1974</dc:date>
+        <dc:title>Photon correlation and light beating spectroscopy</dc:title>
+        <z:numPages>111</z:numPages>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_39">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:books.html"/>
+        <dc:identifier>
+            <dcterms:URI>
+                <rdf:value>https://books.google.ru/books?hl=en&amp;lr=&amp;id=BuDvBwAAQBAJ&amp;oi=fnd&amp;pg=PA3&amp;dq=Photon+Correlation+and+Light+Beating+Spectroscopy&amp;ots=T0fiukZZad&amp;sig=br9NhjxZDeqXoiIYT--3gHWnrgE&amp;redir_esc=y#v=onepage&amp;q=Photon%20Correlation%20and%20Light%20Beating%20Spectroscopy&amp;f=false</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2015-10-18 20:36:08</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+    </z:Attachment>
+    <bib:Book rdf:about="http://ir.nmu.org.ua/handle/123456789/33745">
+        <z:itemType>book</z:itemType>
+        <bib:authors>
+            <rdf:Seq>
+                <rdf:li>
+                    <foaf:Person>
+                        <foaf:surname>Сивухин</foaf:surname>
+                        <foaf:givenname>Д. В.</foaf:givenname>
+                    </foaf:Person>
+                </rdf:li>
+            </rdf:Seq>
+        </bib:authors>
+        <link:link rdf:resource="#item_34"/>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ir.nmu.org.ua/handle/123456789/33745</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dc:date>1979</dc:date>
+        <dcterms:dateSubmitted>2015-10-18 20:25:45</dcterms:dateSubmitted>
+        <z:libraryCatalog>Google Scholar</z:libraryCatalog>
+        <dc:title>Общий курс физики. Т. 4 Оптика</dc:title>
+    </bib:Book>
+    <z:Attachment rdf:about="#item_34">
+        <z:itemType>attachment</z:itemType>
+        <rdf:resource rdf:resource="storage:33745.html"/>
+        <dc:identifier>
+            <dcterms:URI>
+               <rdf:value>http://ir.nmu.org.ua/handle/123456789/33745</rdf:value>
+            </dcterms:URI>
+        </dc:identifier>
+        <dcterms:dateSubmitted>2015-10-18 20:25:47</dcterms:dateSubmitted>
+        <dc:title>Snapshot</dc:title>
+    </z:Attachment>
+</rdf:RDF>
