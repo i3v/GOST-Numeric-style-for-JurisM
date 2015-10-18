@@ -5,7 +5,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 		<title>Russian GOST R 7.0.5-2008 (numeric) En+Ru</title>
 		<id>http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru</id>
 		<link href="https://raw.githubusercontent.com/i3v/JurisM_RuStyles/master/GOST_Numeric_JurisM.csl" rel="self"/>
-		<link href="http://protect.gost.ru/v.aspx?control=8&baseC=6&page=0&month=10&year=2015&search=7.0.5-2008&RegNum=1&DocOnPageCount=15&id=165614" rel="documentation"/>
+		<link href="https://github.com/i3v/JurisM_RuStyles/raw/master/docs/gost_p_7_0_5-2008!1343.doc" rel="documentation"/>
 		<!-- <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru" rel="self"/> -->
 		<author>
 			<name>Yurkin Maxim</name>
@@ -273,7 +273,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
-				<group>
+				<group delimiter=" ">
 					<group delimiter=". ">
 						<text macro="author"/>
 						<!-- Заголовок с указанием авторов -->
@@ -282,12 +282,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix="//"/>
+					<text variable="container-title" form="short" prefix="// "/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix="/"/>
+					<text macro="editor-translator" prefix="/ "/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
@@ -307,7 +307,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
-				<group>
+				<group delimiter=" ">
 					<group delimiter=". ">
 						<text macro="author"/>
 						<!-- Заголовок с указанием авторов -->
@@ -316,12 +316,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix="//"/>
+					<text variable="container-title" form="short" prefix="// "/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix="/"/>
+					<text macro="editor-translator" prefix="/ "/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
@@ -343,7 +343,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
-				<group>
+				<group delimiter=" ">
 					<group delimiter=". ">
 						<text macro="author"/>
 						<!-- Заголовок с указанием авторов -->
@@ -352,12 +352,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix="//"/>
+					<text variable="container-title" form="short" prefix="// "/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix="/"/>
+					<text macro="editor-translator" prefix="/ "/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
