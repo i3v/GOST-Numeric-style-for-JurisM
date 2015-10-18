@@ -50,6 +50,8 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			
 		<rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
 	</info>
+	
+	
 	<!-- Local terms -->
 	<locale>
 		<terms>
@@ -109,36 +111,49 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	
 	
 	<macro name="edition">
-		<choose>
-			<if is-numeric="edition">
-				<group delimiter=" ">
-					<number variable="edition" form="ordinal"/>
-					<text term="edition" form="short"/>
-				</group>
-			</if>
-			<else>
-				<text variable="edition"/>
-			</else>
-		</choose>
+	  <!-- edition must be numeric -->
+		<group delimiter=" ">
+			<number variable="edition" form="ordinal"/>
+			<text term="edition" form="short"/>
+		</group>
 	</macro>
+	
+	
+	
 	<macro name="type-number">
 		<!-- document type and number (thesis, patent, report, thesis, manuscript,...) -->
 		<choose>
 			<if type="patent">
 				<text term="letter" form="short"/>
+				  
+				  
+				<!--Using "publication-number" patent-specific variable
+				 http://citationstylist.org/docs/citeproc-js-csl.html#publication-number-extension  -->
+				
+				
+				<number variable="publication-number"/>
+				
+				
+				<!-- 
+				ToDo: consider using http://citationstylist.org/docs/citeproc-js-csl.html#jurisdiction-extension  instead of old 
+				"<number variable="publication-number" prefix=" " suffix=" USA"/>" suffix
+				-->
 				<!-- USA should be replaced by country variable when supported by CSL. 
-				However, it is not clear how it will be localized -->
-				<text variable="number" prefix=" " suffix=" USA"/>
+				However, it is not clear how it will be localized -->  
+				  
 			</if>
 			<else>
 				<!-- this is used for entries like 'Report', 'PhD thesis', 'submitted to ...' (for manuscripts) -->
 				<group delimiter=" ">
 					<text variable="genre"/>
-					<text variable="number"/>
+					<number variable="number"/>
 				</group>
 			</else>
 		</choose>
 	</macro>
+	
+	
+	
 	<macro name="publisher">
 		<!-- includes place -->
 		<group delimiter=": ">
@@ -146,35 +161,48 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<text variable="publisher"/>
 		</group>
 	</macro>
+	
+	
+	
 	<macro name="issued-year">
 		<date variable="issued">
 			<date-part name="year"/>
 		</date>
 	</macro>
+	
+	
+	
 	<macro name="locators">
 		<!-- volume and issue -->
 		<group delimiter=", ">
 			<group delimiter=" ">
 				<text term="volume" form="short" text-case="sentence"/>
-				<text variable="volume"/>
+				<number variable="volume"/>
 			</group>
 			<group delimiter=" ">
 				<text term="issue" form="symbol"/>
-				<text variable="issue"/>
+				<number variable="issue"/>
 			</group>
 		</group>
 	</macro>
+	
+	
+	
 	<macro name="page">
 		<!-- it is assumed that fields "page" and "# of Pages" do not exist simultaneously -->
 		<group delimiter=" ">
 			<label variable="page" form="short" text-case="sentence" plural="never"/>
-			<text variable="page"/>
+			<number variable="page"/>
 		</group>
 		<group delimiter=" ">
-			<text variable="number-of-pages"/>
+			<number variable="number-of-pages"/>
 			<text term="page" form="short"/>
 		</group>
 	</macro>
+	
+	
+	
+	
 	<macro name="access">
 		<!-- only for webpages -->
 		<choose>
@@ -182,7 +210,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 				<choose>
 					<if variable="URL">
 						<text variable="URL" prefix="URL: "/>
-						<group prefix=" (" suffix=")" delimiter=": ">
+						<group prefix="(" suffix=")" delimiter=": ">
 							<text term="accessed"/>
 							<!-- localized date is not used here, since we prefer the Russian date style for entries of all languages -->
 							<date variable="accessed">
@@ -196,6 +224,10 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			</if>
 		</choose>
 	</macro>
+	
+	
+	
+	
 	<!-- Citation -->
 	<citation collapse="citation-number">
 		<sort>
@@ -211,6 +243,10 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			</group>
 		</layout>
 	</citation>
+	
+	
+	
+	
 	<!-- Bibliography -->
 	<!-- Опции "et-al..." в следующей строчке описывают требования ГОСТ-а, но не полностью. В ГОСТ-е прописано,
 		что от 1 до 3 авторов указываются полностью и в "заголовке", т.е. в начале записи перед
@@ -220,7 +256,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	<bibliography et-al-min="4" et-al-use-first="1" entry-spacing="0" second-field-align="flush">
 
 		<layout suffix="." locale="en">
-			<text variable="citation-number" suffix=". "/>
+			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
 				<group>
@@ -232,12 +268,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix=" // "/>
+					<text variable="container-title" form="short" prefix="//"/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix=" / "/>
+					<text macro="editor-translator" prefix="/"/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
@@ -254,7 +290,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 		</layout>
 
 		<layout suffix="." locale="ru">
-			<text variable="citation-number" suffix=". "/>
+			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
 				<group>
@@ -266,12 +302,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix=" // "/>
+					<text variable="container-title" form="short" prefix="//"/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix=" / "/>
+					<text macro="editor-translator" prefix="/"/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
@@ -287,8 +323,10 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			</group>
 		</layout>
 
+
+
 		<layout suffix=".">
-			<text variable="citation-number" suffix=". "/>
+			<text variable="citation-number" suffix="."/>
 			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
 			<group delimiter=". ">
 				<group>
@@ -300,12 +338,12 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 					</group>
 					<text macro="type-number" prefix=": "/>
 					<!-- Сведения, относящиеся к заглавию -->
-					<text variable="container-title" form="short" prefix=" // "/>
+					<text variable="container-title" form="short" prefix="//"/>
 					<text macro="edition" prefix=". "/>
 					<!-- Издание -->
 					<!-- предполагается, что редакторы и переводчики относятся к конкретному изданию, 
 					поэтому	указываются после номера издания -->
-					<text macro="editor-translator" prefix=" / "/>
+					<text macro="editor-translator" prefix="/"/>
 					<!-- Ответственность -->
 				</group>
 				<group delimiter=", ">
