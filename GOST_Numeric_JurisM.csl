@@ -1,9 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" default-locale="en" version="1.0" 
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" default-locale="en" version="1.1mlz1" 
 demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	<info>
 		<title>Russian GOST R 7.0.5-2008 (numeric) En+Ru</title>
 		<id>http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru</id>
+		<link href="https://raw.githubusercontent.com/i3v/GOST-Numeric-style-for-JurisM/master/GOST_Numeric_JurisM.csl" rel="self"/>
+		<link href="http://protect.gost.ru/document.aspx?control=7&amp;id=173511" rel="documentation"/>
 		<!-- <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru" rel="self"/> -->
 		<author>
 			<name>Yurkin Maxim</name>
@@ -18,7 +20,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 		<category citation-format="numeric"/>
 		<!-- <published>2010-03-22T10:40:00+06:00</published> -->
 		<updated>2011-07-26T11:12:43-07:00</updated>
-		<link href="http://protect.gost.ru/document.aspx?control=7&amp;id=173511" rel="documentation"/>
+		
 		<summary>
 			This style was modified by Maxim Nazarenko to work with both English and Russian source in Multilangual Zotero.
 			Original description by Maxim Yurkin follows.
