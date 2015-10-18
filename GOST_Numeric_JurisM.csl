@@ -89,18 +89,25 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			<name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
 		</names>
 	</macro>
+	
+	
+	
 	<macro name="title">
 		<choose>
 			<if type="webpage">
 				<!-- adds "[Electronic resource]" or Russian equivalent after the title-->
-				<text variable="title" suffix=" "/>
-				<text term="online" text-case="sentence" prefix="[" suffix="]"/>
+				<group delimiter=" ">
+				  <text variable="title"/>
+				  <text term="online" text-case="sentence" prefix="[" suffix="]"/>
+				</group>
 			</if>
 			<else>
 				<text variable="title"/>
 			</else>
 		</choose>
 	</macro>
+	
+	
 	<macro name="edition">
 		<choose>
 			<if is-numeric="edition">
