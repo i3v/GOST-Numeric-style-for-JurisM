@@ -3,7 +3,7 @@
 demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	<info>
 		<title>Russian GOST R 7.0.5-2008 (numeric) En+Ru</title>
-		<id>http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru</id>
+		<id>https://github.com/i3v/JurisM_RuStyles/edit/master/GOST_numeric/GOST_Numeric_JurisM.csl</id>
 		<link href="https://github.com/i3v/JurisM_RuStyles/edit/master/GOST_numeric/GOST_Numeric_JurisM.csl" rel="self"/>
 		<link href="https://github.com/i3v/JurisM_RuStyles/blob/master/GOST_numeric/docs/gost_p_7_0_5-2008!1343.doc" rel="documentation"/>
 		<!-- <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru" rel="self"/> -->
