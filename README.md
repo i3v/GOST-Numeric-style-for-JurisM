@@ -7,8 +7,9 @@ This means correct terms ("т." vs "Vol." and so on) selection.
 
 ## Folder structure
 
-Root folder should only contain style-folders, one-per-style. 
-(Each style is a bibliography-citation format, required by some journal)
+Root folder should only contain style-folders, one-per-style 
+( the only two exceptions are "JurisM_exampleCitations_template.dotx" and "README.md").
+Each style is a bibliography-citation format, required by some journal.
 
 
 Each style should contain:
