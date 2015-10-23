@@ -10,7 +10,7 @@ This means correct terms ("т." vs "Vol." and so on) selection.
 Root folder should only contain style-folders, one-per-style 
 ( the only two exceptions are "JurisM_exampleCitations_template.dotx" and "README.md").
 Each style is a bibliography-citation format, required by some journal.
-Please avoid Cyrillic letters in all file names (any non-first 128 ASCII characters).
+Please avoid Cyrillic letters in all file names (any non-first 128 ASCII characters) as well as spaces " " - at least, this would make URLs more human-readable.
 
 ## Each style should contain:
 
@@ -23,7 +23,7 @@ Please avoid Cyrillic letters in all file names (any non-first 128 ASCII charact
 
   *  a docx/doc file(s) with manually-formatted-text-example(s) + (same) automatically-formatted-text.
     
-    This file should use "JurisM_exampleCitations_template.dotx" template, see "\RuClay2015\examples\General multilanguage bibliography.docx" for reference.
+    This file should use "JurisM_exampleCitations_template.dotx" template, see "\RuClay2015\examples\GeneralMultilanguageBibliography.docx" for reference.
 
   *  a rdf file (right click on bibliography item(s)-> export item -> Zotero RDF) contatinig all citations, used in docx.
   
