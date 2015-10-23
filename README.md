@@ -5,6 +5,20 @@ The main difference to today's Mendeley/Zotero styles is "Multy-language support
 This means correct terms ("т." vs "Vol." and so on) selection.
 
 
+## Issue reporting 
+
+The best way to report a specific issue is via builtin github "issues" tab.
+Note, that both "issue.docx" and "rdf" files should be attached to the report, for everyone to be able to reproduce the issue.
+
+*  To export rdf, right click on bibliography item(s)-> export item -> Zotero RDF.
+
+*  Try to make docx file as small as possible, but include both "correct" and "as generated" versions.
+
+*  See example issue report here: https://github.com/i3v/JurisM_RuStyles/issues/1
+
+Note, that to attach "exampleIssue.rdf", it should be first renamed to "exampleIssue.rdf.txt".
+
+
 ## Folder structure
 
 Root folder should only contain style-folders, one-per-style 
@@ -31,6 +45,4 @@ Please avoid Cyrillic letters in all file names (any non-first 128 ASCII charact
 
   Examples should allow to quickly check, "how this style looks like" (useful for those, who are looking for a specific style) and "what features are implemented" (useful for those, who are looking for an example implementation of a specific feature).
 
-*  "issues" folder, which demonstares known style issues, e.g. where style behaviour is different 
-   from the official requirements (either fixable or not). This is the folder for doc/docx/rtf files, and associated rdf files. This is a folder one may use, when to report an issue. 
-   Although reporting issues with built-in github issue tracker is preferable. Note, that both "docx" and "rdf" should be attached to the report. Note, that to attach "exampleIssue.rdf", it should be first renamed to "exampleIssue.rdf.txt".
+
