@@ -32,4 +32,5 @@ Please avoid Cyrillic letters in all file names (any non-first 128 ASCII charact
   Examples should allow to quickly check, "how this style looks like" (useful for those, who are looking for a specific style) and "what features are implemented" (useful for those, who are looking for an example implementation of a specific feature).
 
 *  "issues" folder, which demonstares known style issues, e.g. where style behaviour is different 
-   from the official requirements (either fixable or not)
+   from the official requirements (either fixable or not). This is the folder for doc/docx/rtf files, and associated rdf files. This is a folder one may use, when to report an issue. 
+   Although reporting issues with built-in github issue tracker is preferable. Note, that both "docx" and "rdf" should be attached to the report. Note, that to attach "exampleIssue.rdf", it should be first renamed to "exampleIssue.rdf.txt".
