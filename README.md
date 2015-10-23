@@ -1,4 +1,4 @@
-# Juris-M -> Russian Styles
+﻿# Juris-M -> Russian Styles
 
 This repository aims to collect relevant versions on Juris-M csl citation styles.
 The main difference to today's Mendeley/Zotero styles is "Multy-language support".
@@ -16,7 +16,7 @@ Please avoid Cyrillic letters in all file names (any non-first 128 ASCII charact
 
 
 
-*  "docs" folder with a copy of official style documentation.
+*  "officialStyleRules" folder with a copy of official style documentation.
   Official style rules is simply a copy of rules and examples, as-provided-by-publisher. It is convenient to keep them next-to-code. 
 
 *  "examples" folder, which demonstrates as-designed behaviour: 
