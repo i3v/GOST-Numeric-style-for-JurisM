@@ -31,7 +31,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			
 		<!-- <published>2010-03-22T10:40:00+06:00</published> -->
 		<!-- <updated>2011-07-26T11:12:43-07:00</updated> -->
-		<updated>2015-10-20T19:26:00-07:00</updated>
+		<updated>2015-10-23T20:17:00-07:00</updated>
 			
 			
 		<rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
@@ -239,44 +239,63 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 			</if>
 		</choose>
 	</macro>
+
 	
 	
 	
 	
-	<!-- Citation -->
-   
- <citation et-al-min="3" et-al-use-first="1" et-al-subsequent-min="3" et-al-subsequent-use-first="1">    
-    <layout prefix="(" suffix=")" delimiter="; " locale="en">    	
-	  <group delimiter=", ">
-	    <text macro="author_short_en"/>
-	    <text macro="issued-year"/>
-	  </group>	    
-    </layout>
 	
-	<layout prefix="(" suffix=")" delimiter="; " locale="ru">    	
-	  <group delimiter=", ">
-	    <text macro="author_short_ru"/>
-	    <text macro="issued-year"/>
-	  </group>	    
-    </layout>
+	<!-- 
+		 Три раза копипастить один и тот же <layout> (как в cs:citation так и в cs:bibliography> 
+		 c разными locale необходимо - это тот самый костыль, на котором держится поддержка нескольких 
+		 языков в MLZ и Juris-M.  Третий раз - "дефолтный язык" (?).
+		 
+		 В случае, если необходимо добавить макрос, который будет работать немного по-разному для разных 
+		 locale, сделать это можно только создав немного различные копии макросов для каждого языка - 
+		 в этом случае layout будут немного разные. 
+		 
+		 Achtung! Следующие макросы "локализованы:" (об этом надо помнить при попытках копипастить)
+		 
+		 ## cs:citation:
+		 
+		 * author_short_ru, author_short_en
+		 
+		 ## cs:bibliography:
+		 
+		 * <none>		  
+		 
+	-->	
 	
-    <layout prefix="(" suffix=")" delimiter="; ">    	
-	  <group delimiter=", ">
-	    <text macro="author_short_ru"/>
-	    <text macro="issued-year"/>
-	  </group>	    
-    </layout>
- </citation>
+	
+	
+	<!-- Citation -->   
+	<citation et-al-min="3" et-al-use-first="1" et-al-subsequent-min="3" et-al-subsequent-use-first="1">    
+		<layout prefix="(" suffix=")" delimiter="; " locale="en">    	
+		  <group delimiter=", ">
+			<text macro="author_short_en"/>
+			<text macro="issued-year"/>
+		  </group>	    
+		</layout>
+		
+		<layout prefix="(" suffix=")" delimiter="; " locale="ru">    	
+		  <group delimiter=", ">
+			<text macro="author_short_ru"/>
+			<text macro="issued-year"/>
+		  </group>	    
+		</layout>
+		
+		<layout prefix="(" suffix=")" delimiter="; ">    	
+		  <group delimiter=", ">
+			<text macro="author_short_ru"/>
+			<text macro="issued-year"/>
+		  </group>	    
+		</layout>
+	</citation>
 	
 	
 	
 	
 	<!-- Bibliography -->
-	<!-- Опции "et-al..." в следующей строчке описывают требования ГОСТ-а, но не полностью. В ГОСТ-е прописано,
-		что от 1 до 3 авторов указываются полностью и в "заголовке", т.е. в начале записи перед
-		названием, а 4 и более сокращаются с помощью "и др." и указываются только в "сведениях об
-		ответственности", т.е. после названия. Сделать такой перенос, по-крайней мере, нетривиально,
-		поэтому в этом стиле авторы всегда указываются вначале -->
 	<bibliography et-al-min="40" et-al-use-first="1" et-al-subsequent-min="40" et-al-subsequent-use-first="1" entry-spacing="0">
 
 		<layout locale="en">
@@ -320,8 +339,7 @@ demote-non-dropping-particle="sort-only" page-range-format="expanded">
 		</layout>
 
 		<layout locale="ru">			
-			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
-			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->
+			<!-- Комментарии ниже даны в соответствии с терминами, определёнными в ГОСТе -->			
 			<group delimiter=". " suffix=".">
 			
 				<!-- Заголовок с указанием авторов -->
