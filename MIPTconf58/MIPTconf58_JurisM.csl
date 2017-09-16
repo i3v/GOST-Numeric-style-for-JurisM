@@ -3,8 +3,8 @@
 demote-non-dropping-particle="sort-only" page-range-format="expanded">
 	<info>
 		<title>MIPT conference 58 (2015)</title>
-		<id>https://github.com/i3v/JurisM_RuStyles/edit/master/MIPTconf58/MIPTconf58_JurisM.csl</id>
-		<link href="https://github.com/i3v/JurisM_RuStyles/edit/master/MIPTconf58/MIPTconf58_JurisM.csl" rel="self"/>
+		<id>https://raw.githubusercontent.com/i3v/JurisM_RuStyles/master/MIPTconf58/MIPTconf58_JurisM.csl</id>
+		<link href="https://raw.githubusercontent.com/i3v/JurisM_RuStyles/master/MIPTconf58/MIPTconf58_JurisM.csl" rel="self"/>
 		<link href="https://github.com/i3v/JurisM_RuStyles/edit/master/MIPTconf58/officialStyleRules/rules.htm" rel="documentation"/>
 		<!-- <link href="http://www.zotero.org/styles/gost-r-7-0-5-2008-numeric-en-ru" rel="self"/> -->
 		<author>
